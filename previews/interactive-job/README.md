@@ -41,7 +41,9 @@ You can also put `sleep <specific time>` at the end of the command to speicify t
 * sleep 1m
 * sleep 1h
 * sleep 1d
+ 
  Note that if you put `sleep infinity`, you will need to cancel the job after you finish the work. We are working on an auto termination policy for this scenario. 
+ 
 3. Run command `az ml job create --workspace-name <your workspace name> --resource-group <your resource group name> --subscription <sub-id> --file <path to your job yaml file> `
 
 ### Submit an interactive job via AzureML studio portal
