@@ -22,7 +22,7 @@ Interactive job is supported on **AMLArc Compute** and will be available on AML 
 1. Create a job yaml `job.yaml` with below content. Make sure to replace `your job name` and `your attached amlarc compute name` with your own values. If you want to use custom environment, follow the examples in [this tutorial](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-train-cli). 
 ```dotnetcli
 name: <your job name> #job name needs to be updated every time you submit it
-command: sleep infinity # you can add other commands before "sleep infinity" but make sure "sleep infinity" is put at the end to make sure the resource is reserved.
+command: sleep infinity # you can add other commands before "sleep infinity" but make sure "sleep infinity" is put at the end so that the resource is reserved.
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu:5
 compute:
   target: azureml:<your attached amlarc compute name>
@@ -36,6 +36,12 @@ interaction_endpoints:
   "my_jupyterlab":
     type: "JupyterLab"
 ```
+You can also put `sleep <specific time>` at the end of the command to speicify the amount of time you want to reserve the compute resource. Note that if you put `sleep infinity`, you will need to cancel the job after you finish the work. We are working on an auto termination policy for this scenario. 
+The format follows: 
+* sleep 1s
+* sleep 1m
+* sleep 1h
+* sleep 1d
 3. Run command `az ml job create --workspace-name <your workspace name> --resource-group <your resource group name> --subscription <sub-id> --file <path to your job yaml file> `
 
 ### Submit an interactive job via AzureML studio portal
