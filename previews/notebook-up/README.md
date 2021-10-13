@@ -36,7 +36,7 @@ az extension remove --name ml
 
 Install the private Azure ML CLI extension with notebook-up support:
 ```shell
-az extension add --source https://azuremlsdktestpypi.blob.core.windows.net/wheels/azureml-v2-cli-e2e-test/48657850/ml-0.0.48657850-py3-none-any.whl --pip-extra-index-urls https://azuremlsdktestpypi.azureedge.net/azureml-v2-cli-e2e-test/48657850 -y
+az extension add --source https://azuremlsdktestpypi.blob.core.windows.net/wheels/azureml-v2-cli-e2e-test/49246860/ml-0.0.49246860-py3-none-any.whl --pip-extra-index-urls https://azuremlsdktestpypi.azureedge.net/azureml-v2-cli-e2e-test/49246860 -y
 ```
 
 Verify your installation:
