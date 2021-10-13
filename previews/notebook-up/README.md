@@ -10,7 +10,7 @@ ML professionals are used to typing `jupyter notebook` to start their ML data & 
 
 * Azure CLI and ML extension. For more information, see [Install, set up, and use the CLI (v2) (preview)](how-to-configure-cli.md). 
 
-* An Azure MC compute cluter resource in your workspace in any of the [supported regions](#supported-regions), created post September 2021. Learn how to [create an Azure Machine Learning compute cluster](https://docs.microsoft.com/azure/machine-learning/how-to-create-attach-compute-cluster?tabs=python). 
+* An Azure ML compute cluter resource in your workspace in any of the [supported regions](#supported-regions), created post September 2021. Learn how to [create an Azure Machine Learning compute cluster](https://docs.microsoft.com/azure/machine-learning/how-to-create-attach-compute-cluster?tabs=python). 
 
 ## Supported regions
 
@@ -56,7 +56,7 @@ Note that you are not charged for compute at this point as `cpu-cluster` will re
 
 The following example in this article use `cpu-cluster`. Adjust these as needed to the name of your cluster.
 
-Use `az ml compute create -h` for more details on compute create options.
+Use `az ml compute create -h` for more details on compute create options. Note that if you re-use an existing Azure ML compute cluster, it must have been created post September 2021 to support the notebook feature.
 
 ### Create a new notebook 
 
