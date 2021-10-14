@@ -16,7 +16,12 @@ In this quickstart, you'll use the job creation wizard to submit a training job.
 
 ## Create a training script
 
-In this example, you'll build a model to classify different species of iris flowers by using the Iris dataset.  This is the same model built in the [Quickstart: Train a sample model](quickstart-train-sample.md).  This time you'll supply your own code and data.
+In this quickstart, you'll build a model to classify different species of iris flowers by using the Iris dataset.  This is the same model built in the [Quickstart: Train a sample model](quickstart-train-sample.md).  This time you'll supply both the code and the data.
+
+In the training script, `mlflow.autolog()` is specified prior to the training code. Since MLflow supports the scikit-learn framework, this single call in the script will produced the metrics, images, and model files you'll see once the run completes.
+
+> [!TIP]
+>  If your frameworks supports it, [MLflow](https://mlflow.org/) is the easiest way to produce output and logs from your training script.
 
 Copy the code below and paste it into a file named *main.py*.  This file is your training script, which you'll use in the steps below.
 
@@ -134,14 +139,6 @@ if __name__ == "__main__":
     print("*" * 60)
     print("\n\n")
 ```
-
-In this example, `mlflow.autolog()` is used before the training code. Since the scikit-learn framework is supported by MLflow for autologging, this single call in the script will produced the metrics, images, and model files you'll see once the run completes.
-
-{% tip %}
-
-**Tip:** If your frameworks supports it, [mlflow](https://mlflow.org/) is the easiest way to produce logs and output from your training script. 
-
-{% endtip %}
 
 
 ## Create a dataset
