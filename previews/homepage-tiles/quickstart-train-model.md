@@ -23,9 +23,9 @@ In the training script, `mlflow.autolog()` is specified prior to the training co
 > [!TIP]
 >  If your frameworks supports it, [MLflow](https://mlflow.org/) is the easiest way to produce output and logs from your training script.
 
-Copy the code below and paste it into a file named *main.py*.  This file is your training script, which you'll use in the steps below.
+Copy the code belo w and paste it into a file named *main.py*.  This file is your training script, which you'll use in the steps below.
 
-```python
+```python {highlight=13-14}
 # imports
 import os
 import mlflow
