@@ -25,7 +25,7 @@ In the training script, `mlflow.autolog()` is specified prior to the training co
 
 Copy the code belo w and paste it into a file named *main.py*.  This file is your training script, which you'll use in the steps below.
 
-```python {highlight=13-14}
+```python
 # imports
 import os
 import mlflow
