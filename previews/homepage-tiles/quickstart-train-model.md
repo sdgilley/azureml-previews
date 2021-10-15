@@ -23,7 +23,7 @@ In the training script, `mlflow.autolog()` is specified prior to the training co
 > [!TIP]
 >  If your frameworks supports it, [MLflow](https://mlflow.org/) is the easiest way to produce output and logs from your training script.
 
-Copy the code belo w and paste it into a file named *main.py*.  This file is your training script, which you'll use in the steps below.
+Copy the code below and paste it into a file named *main.py*.  This file is your training script, which you'll use in the steps below.
 
 ```python
 # imports
@@ -140,7 +140,6 @@ if __name__ == "__main__":
     print("\n\n")
 ```
 
-
 ## Create a dataset
 
 To supply data to a training job, you use an Azure Machine Learning dataset.  In this example, the data is from a website.  Create a dataset with a reference to this data source location.
@@ -169,7 +168,7 @@ Now that you have the training script and the dataset for training, you're ready
 1. In studio, on the left side, select the **Home** to go back to the workspace homepage.
 1. Select **Train your own model**.
 
-:::image type="content" source="media/tutorial-train-model/train-your-model.png" alt-text="Screenshot: Train your own model wizard on the homepage.":::
+![ Screenshot: Train your own model wizard on the homepage. ](../media/quickstart-train-model/train-your-own-model.png)
 
 Fill out the job creation wizard as shown in the sections below.
 
