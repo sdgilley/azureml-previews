@@ -214,9 +214,9 @@ Once you submit the job, you'll see the **Details** page of the job run.  This i
 
 > [!TIP]
 > To return to this page later, from [studio](https://ml.azure.com)
-> * Select **Experiments** on the left, 
-> * Select the experiment name **sklearn-iris-example**
-> * Select the display name for the run.
+> * Select **Experiments** on the left
+> * Select the experiment name 
+> * Select the display name for the run
 
 After a minute or so, you'll see a notification about the job.  The notification appears briefly in the upper right corner.  Also a number is added to the bell icon in the upper right. Click the bell to view and dismiss notifications.
 
@@ -234,7 +234,7 @@ While you're waiting for the run to complete, select **Snapshot** to view the fi
 
 ## Details
 
-If you wish, return to the details page while you wait for the notification that the run has completed.  Or use **Refresh** occasionally on the details page too view the current status.
+If you wish, return to the details page while you wait for the notification that the run has completed.  Use **Refresh** occasionally on the details page to view the current status.
 
 The amount of time to complete the job will vary, but should take around four or five minutes, if you're using the compute resource for the first time. This includes time to create the compute cluster, spin up a node, and run the job.
 
@@ -262,3 +262,9 @@ Once the job is complete, the *model* folder contains all model files that are s
 
 
 :::image type="content" source="media/quickstart-train-sample/images.png" alt-text="Screenshot: Images from the training script.":::
+
+## Next steps
+
+* See [Quickstart: Train your own model with the job creation wizard (preview)](quickstart-train-model.md) to train a model with your own training script and data.
+* See [Quickstart: Deploy the model (preview)](quickstart-deploy-model.md) to deploy the model you just trained.
+

@@ -77,3 +77,7 @@ Select **Output + logs** to view all output from the training script, as well as
 Once the job is complete, the *model* folder contains all model files that are saved in the training script.
 
 ![ Screenshot: Output + logs for the training script run. ](../media/quickstart-train-sample/output-logs.png) 
+
+## Next steps
+
+* See [Quickstart: Deploy the model (preview)](quickstart-deploy-model.md) to deploy the model you just trained.
