@@ -29,7 +29,7 @@ The deploy wizard helps you deploy a model you've trained, either in Azure Machi
 
     ![ Screenshot: Download output from training run. ](../media/quickstart-deploy-model/download-all.png)
 
-1. Locate the downloaded folder and extract all contents if it downloads as a zipped file.
+1. Locate the downloaded folder or zipped file. If it downloads as a zipped file, extract all contents into a folder to use in the next step.
 
 ## Deploy the model
 
