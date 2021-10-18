@@ -19,8 +19,9 @@ Complete either one of these quickstarts:
 
 The deploy wizard helps you deploy a model you've trained, either in Azure Machine Learning, or elsewhere.  In this quickstart, you'll use the model that you trained in one of the prerequisite quickstarts. 
 
-1. Start by signing into Azure Machine Learning [studio](https://ml.azure.com).
-1. Access the private preview.
+1. Sign in to [Azure Machine Learning studio](https://ml.azure.com).
+1. Select your workspace.
+1. @@What steps do they need to get to the preview version?@@
 1. On the left, select **Experiments**.
 1. Select the experiment that contains the model (for example, sklearn-iris-example for the model created from [Quickstart: Try it out with a sample model (preview)](quickstart-train-model-sample.md)).
 1. Select the link on the display name for the run.

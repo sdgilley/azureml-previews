@@ -144,7 +144,10 @@ if __name__ == "__main__":
 
 To supply data to a training job, you use an Azure Machine Learning dataset.  In this example, the data is from a website.  Create a dataset with a reference to this data source location.
 
-1. In studio, on the left hand side, select **Datasets**.
+1. Sign in to [Azure Machine Learning studio](https://ml.azure.com).
+1. Select your workspace.
+1. @@What steps do they need to get to the preview version?@@
+1. On the left hand side, select **Datasets**.
 1. Select **Create dataset** and then select **From web files**.
 1. Copy and paste the **Web URL**:
 
@@ -164,6 +167,7 @@ You'll use this dataset, along with the training script, to run your training jo
 ## Train your own model
 
 Now that you have the training script and the dataset for training, you're ready to submit the job.
+
 
 1. In studio, on the left side, select the **Home** to go back to the workspace homepage.
 1. Select **Train your own model**.

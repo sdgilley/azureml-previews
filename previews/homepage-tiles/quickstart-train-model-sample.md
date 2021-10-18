@@ -13,6 +13,9 @@ In this quickstart, you'll train a sample model and see how Azure Machine Learni
 
 ![ Try it out to train a new model in Azure Machine Learning. ](../media/quickstart-train-sample/try-it-out.png) 
 
+1. Sign in to [Azure Machine Learning studio](https://ml.azure.com).
+1. Select your workspace.
+1. @@What steps do they need to get to the preview version?@@
 1. To train your first model, select **Try it out**.
 1. Select  **Classification - Scikit-learn - Iris dataset**.  This example will build a model to classify different species of iris flowers by using the Iris dataset.
 1. Select **Show job details** to see more about the job that will run.  Scroll down to view the data, along with a preview of the first five rows of data.  
