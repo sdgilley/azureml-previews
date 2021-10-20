@@ -1,6 +1,6 @@
 # Quickstart: Deploy the model (preview)
 
-Now that you've trained a model, it's time to deploy it for use in predicting scores for new data. Completing this quickstart incurs a small cost of approximately 10 USD cents in your Azure account.  @@ Is this true?  Is it less?  I haven't tried this yet...@@
+Now that you've trained a model, it's time to deploy it for use in predicting scores for new data. 
 
 In this quickstart, you'll use the job creation wizard to deploy a model.  You'll learn how to:
 
@@ -21,7 +21,6 @@ The deploy wizard helps you deploy a model you've trained, either in Azure Machi
 
 1. Sign in to [Azure Machine Learning studio](https://ml.azure.com).
 1. Select your workspace.
-1. @@What steps do they need to get to the preview version?@@
 1. On the left, select **Experiments**.
 1. Select the experiment that contains the model (for example, sklearn-iris-example for the model created from [Quickstart: Try it out with a sample model (preview)](quickstart-train-model-sample.md)).
 1. Select the link on the display name for the run.

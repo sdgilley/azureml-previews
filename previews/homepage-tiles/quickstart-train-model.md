@@ -146,7 +146,6 @@ To supply data to a training job, you use an Azure Machine Learning dataset.  In
 
 1. Sign in to [Azure Machine Learning studio](https://ml.azure.com).
 1. Select your workspace.
-1. @@What steps do they need to get to the preview version?@@
 1. On the left hand side, select **Datasets**.
 1. Select **Create dataset** and then select **From web files**.
 1. Copy and paste the **Web URL**:
