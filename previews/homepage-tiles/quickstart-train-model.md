@@ -227,7 +227,7 @@ If the **Status** on the page doesn't update, select **Refresh**.  You may see a
 
 ## Snapshot
 
-While you're waiting for the run to complete, select **Snapshot** to view the files used in the run.  Select **main.py** to view the script. 
+While you're waiting for the run to complete, select **Snapshot** to view the files used in the run.  Select **main.py** to view the script.
 
 ![ Screenshot: Snapshot shows the files used in the job. ](../media/quickstart-train-sample/snapshot.png) 
 
@@ -235,7 +235,7 @@ While you're waiting for the run to complete, select **Snapshot** to view the fi
 
 If you wish, return to the details page while you wait for the notification that the run has completed.  Use **Refresh** occasionally on the details page to view the current status.
 
-The amount of time to complete the job will vary, but should take around four or five minutes, if you're using the compute resource for the first time. This includes time to create the compute cluster, spin up a node, and run the job.
+The amount of time to complete the job will vary, but should take around five or six minutes, if you're using the compute resource for the first time. This includes time to create the compute cluster, spin up a node, and run the job.
 
 ## Metrics
 
@@ -261,6 +261,9 @@ Once the job is complete, the *model* folder contains all model files that are s
 
 
 :::image type="content" source="media/quickstart-train-sample/images.png" alt-text="Screenshot: Images from the training script.":::
+
+> [!NOTE]
+> Your log files may look different from this screenshot.  But you'll still have a **model** folder.
 
 ## Next steps
 

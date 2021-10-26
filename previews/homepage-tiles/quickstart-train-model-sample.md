@@ -53,7 +53,7 @@ While you're waiting for the run to complete, select **Snapshot** to view the fi
 
 If you wish, return to the details page while you wait for the notification that the run has completed.  Or use **Refresh** occasionally on the details page too view the current status.
 
-The amount of time to complete the job will vary, but should take around four or five minutes, if you're using the compute resource for the first time. This includes time to create the compute cluster, spin up a node, and run the job.
+The amount of time to complete the job will vary, but should take around five or six minutes, if you're using the compute resource for the first time. This includes time to create the compute cluster, spin up a node, and run the job.
 
 ## Metrics
 
@@ -69,6 +69,8 @@ Select  **Images** to view any images that were created in the training script. 
 
 ![ Screenshot: Images from the training script. ](../media/quickstart-train-sample/images.png)
 
+If you selected a different sample, you might see different images here.
+
 ## Output + logs
 
 Select **Output + logs** to view all output from the training script, as well as logs from the run. The logs can be useful if you have problems running the script.  You can view logs while the job is running.
@@ -76,6 +78,9 @@ Select **Output + logs** to view all output from the training script, as well as
 Once the job is complete, the *model* folder contains all model files that are saved in the training script.
 
 ![ Screenshot: Output + logs for the training script run. ](../media/quickstart-train-sample/output-logs.png) 
+
+> [!NOTE]
+> Your log files may look different from this screenshot.  But you'll still have a **model** folder.
 
 ## Next steps
 
