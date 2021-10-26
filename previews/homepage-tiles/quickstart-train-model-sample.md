@@ -1,6 +1,6 @@
 # Quickstart: Try it out with a sample model (preview)
 
-Get started with Azure Machine Learning by training a sample model. Completing this quickstart incurs a small cost of approximately 10 USD cents in your Azure account.
+Get started with Azure Machine Learning by training a sample model. 
 
 In this quickstart, you'll train a sample model and see how Azure Machine Learning helps you keep track of your training runs.  
 

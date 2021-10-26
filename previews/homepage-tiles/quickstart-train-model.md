@@ -1,6 +1,6 @@
 # Quickstart: Train your own model with the job creation wizard (preview)
 
-Bring your own data and code to create your training job in Azure Machine Learning. Completing this quickstart incurs a small cost of approximately 10 USD cents in your Azure account.
+Bring your own data and code to create your training job in Azure Machine Learning. 
 
 In this quickstart, you'll use the job creation wizard to submit a training job.  You'll learn how to:
 
