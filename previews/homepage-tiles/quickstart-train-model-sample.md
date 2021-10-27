@@ -1,4 +1,4 @@
-# Quickstart: Try it out with a sample model (preview)
+# Quickstart: Try it out with a sample model (private preview)
 
 Get started with Azure Machine Learning by training a sample model. 
 

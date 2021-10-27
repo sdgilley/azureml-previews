@@ -1,4 +1,4 @@
-# Quickstart: Train your own model with the job creation wizard (preview)
+# Quickstart: Train your own model with the job creation wizard (private preview)
 
 Bring your own data and code to create your training job in Azure Machine Learning. 
 

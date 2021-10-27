@@ -1,4 +1,4 @@
-# Quickstart: Deploy the model (preview)
+# Quickstart: Deploy the model (private preview)
 
 Now that you've trained a model, it's time to deploy it for use in predicting scores for new data.
 
