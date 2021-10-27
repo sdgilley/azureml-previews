@@ -12,7 +12,6 @@ In this quickstart, you'll use the job creation wizard to submit a training job.
 ## Prerequisites
 
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-* An Azure Machine Learning workspace.  If you don't have one, [create one now](https://docs.microsoft.com/azure/machine-learning/how-to-manage-workspace?tabs=python).
 
 ## Create a training script
 
@@ -144,8 +143,8 @@ if __name__ == "__main__":
 
 To supply data to a training job, you use an Azure Machine Learning dataset.  In this example, the data is from a website.  Create a dataset with a reference to this data source location.
 
-1. Sign in to [Azure Machine Learning studio](https://ml.azure.com).
-1. Select your workspace.
+1. Sign in to [Azure Machine Learning studio](https://ml.azure.com). Use the information provided to you to activate the private preview.
+1. Select **Go to workspace** for your workspace. If you don't have one, select **Create workspace** and follow the steps to create one.  Once created, select **Go to workspace**.
 1. On the left hand side, select **Datasets**.
 1. Select **Create dataset** and then select **From web files**.
 1. Copy and paste the **Web URL**:

@@ -1,6 +1,6 @@
 # Quickstart: Deploy the model (preview)
 
-Now that you've trained a model, it's time to deploy it for use in predicting scores for new data. 
+Now that you've trained a model, it's time to deploy it for use in predicting scores for new data.
 
 In this quickstart, you'll use the job creation wizard to deploy a model.  You'll learn how to:
 
@@ -19,8 +19,8 @@ Complete either one of these quickstarts:
 
 The deploy wizard helps you deploy a model you've trained, either in Azure Machine Learning, or elsewhere.  In this quickstart, you'll use the model that you trained in one of the prerequisite quickstarts. 
 
-1. Sign in to [Azure Machine Learning studio](https://ml.azure.com).
-1. Select your workspace.
+1. Sign in to [Azure Machine Learning studio](https://ml.azure.com). Use the information provided to you to activate the private preview.
+1. Select **Go to workspace** for your workspace. If you don't have one, select **Create workspace** and follow the steps to create one.  Once created, select **Go to workspace**.
 1. On the left, select **Experiments**.
 1. Select the experiment that contains the model (for example, sklearn-iris-example for the model created from [Quickstart: Try it out with a sample model (preview)](quickstart-train-model-sample.md)).
 1. Select the link on the display name for the run.
