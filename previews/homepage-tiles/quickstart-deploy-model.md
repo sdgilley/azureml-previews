@@ -30,8 +30,8 @@ The deploy wizard helps you deploy a model you've trained, either in Azure Machi
 
     ![ Screenshot: Download model from training run. ](../media/quickstart-deploy-model/download-model.png)
 
-> [!NOTE]
-> Your log files may look different from this screenshot.  But you'll still have a **model** folder.
+    > [!NOTE]
+    > Your log files may look different from this screenshot.  But you'll still have a **model** folder.
 
 1. Make sure the name of the file is **model.pkl**.  If it contains a version number (because your download directory already has that filename), move it elsewhere and change its name to **model.pkl**.  That's the name you'll be using in the scoring script in the next section.
 
