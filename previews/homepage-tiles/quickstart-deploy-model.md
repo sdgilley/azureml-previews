@@ -133,19 +133,38 @@ Once the endpoint is created, you'll see the **Details** tab for the endpoint.  
 
 ![ Screenshot: Model provisioning](../media/quickstart-deploy-model/endpoint-details-deployment-provisioning.png) 
 
+The model is deployed and ready to use when:
+
+* Provisioning state for the endpoint is **Succeeded**
+* Traffic allocation for the deployment is **blue(100%)**
+* Provisioning state for the deployment is **Succeeded**
+
+![ Screenshot: Model deployed](../media/quickstart-deploy-model/deploy-succeeded.png) 
+
 ## Test the deployment
 
-Once the model deployment is complete, select the **Test** tab to test the model.
+Once the model deployment is complete, select the **Test** tab to test the model.  
 
-The iris model expects four numbers as input to the model for each item.  In the scoring script, `data = json.loads(raw_data)["data"]` reads the data.  So you'll use JSON syntax to provide the data.
+The iris model expects values of sepal_length, sepal_width, petal_length and petal_width. Based on this input, it will classify the species as either Iris-setosa, Iris-virginica, or Iris-versicolor.
 
-Test two lines of data by copying and pasting into **Input data to test real-time endpoint**:
+Test by copying and pasting into **Input data to test real-time endpoint**:
 
 ```json
 {"data": [
-    [1,2,3,4], 
-    [10,9,8,7]
+    [5.1,3.5,1.4,0.3],
+    [6.4,3.2,4.5,1.5],
+    [6.8,3.2,5.9,2.3]
 ]}
 ```
 
-After you paste the data, select **Test** to view the test results for the two lines of data.  You'll see two test results, showing the predicted values.
+After you paste the data, select **Test** to view the test results.  You'll see the predicted values for each sample input.
+
+## Consume
+
+Use the information in the **Consume** tab to call this model from you application.
+
+## Clean up resources
+
+Since the deployed model must always be available, the VM it is on is always running. Once you're finished using the deployed model, delete the endpoint to keep from being charged for this VM.
+
+![ Screenshot: Delete the endpoint](../media/quickstart-deploy-model/delete-endpoint.png)
