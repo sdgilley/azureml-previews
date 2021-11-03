@@ -31,9 +31,52 @@ The deploy wizard helps you deploy a model you've trained, either in Azure Machi
 
 1. Locate the downloaded folder or zipped file. If it downloads as a zipped file, extract all contents into a folder to use in the next step.
 
+## Create a scoring script
+
+You use a scoring script to run the deployed model.  For the iris classification model, copy the code below and save the file **sklearn-iris-scoring.py**.  You'll upload this file in the steps below.
+
+```python
+import os
+import logging
+import json
+import numpy
+import joblib
+
+
+def init():
+    """
+    This function is called when the container is initialized/started, typically after create/update of the deployment.
+    You can write the logic here to perform init operations like caching the model in memory
+    """
+    global model
+    # AZUREML_MODEL_DIR is an environment variable created during deployment.
+    # It is the path to the model folder (./azureml-models/$MODEL_NAME/$VERSION)
+    model_path = os.path.join(
+        os.getenv("AZUREML_MODEL_DIR"), "model.pkl"
+    )
+    # deserialize the model file back into a sklearn model
+    model = joblib.load(model_path)
+    logging.info("Init complete")
+
+
+def run(raw_data):
+    """
+    This function is called for every invocation of the endpoint to perform the actual scoring/prediction.
+    In the example we extract the data from the json input and call the scikit-learn model's predict()
+    method and return the result back
+    """
+    logging.info("Request received")
+    data = json.loads(raw_data)["data"]
+    data = numpy.array(data)
+    result = model.predict(data)
+    logging.info("Request processed")
+    return result.tolist()
+
+```
+
 ## Deploy the model
 
-1. Select **Home** to return to the studio homepage
+1. In studio, select **Home** to return to the studio homepage
 1. Select **Deploy your model**.
 
     ![ Screenshot: Deploy your model wizard on the homepage. ](../media/quickstart-deploy-model/deploy-your-model.png)
@@ -56,7 +99,7 @@ Fill out the **Create deployment (preview)** wizard as shown in the following se
 1. Select **Browse**, and select the *model* folder inside your downloaded output folder.
 1. Select **Upload** on the prompt to confirm the upload of four files.
 1. Select **Register**.
-1. Select the model **iris-classification** in the list of registered models.
+1. Select the model **iris-classification** in the list of registered models.  (If the list doesn't appear, try refreshing your browser page.)
 1. Select **Next**.
 
 ### Deployment
@@ -66,4 +109,43 @@ Fill out the **Create deployment (preview)** wizard as shown in the following se
 
 ### Environment
 
-Waiting to see latest build for rest of info.
+1. Browse to find and upload the scoring script you created above.
+1. Scroll down if necessary to select the **scikit-learn** environment.
+1. Select **Next**.
+
+### Compute 
+
+1. Set the **Instance count** to 1.
+1. Select **Next**.
+
+### Traffic
+
+1. Leave all the defaults on this page.
+1. Select **Next**.
+
+### Review
+
+Select **Create** to create the scoring endpoint.
+
+## Deployment details
+
+Once the endpoint is created, you'll see the **Details** tab for the endpoint.  Deployment of the model is still taking place when you first see this page.  You'll see information about the model deployment on the left.
+
+![ Screenshot: Model provisioning](../media/quickstart-deploy-model/endpoint-details-deployment-provisioning.png) 
+
+## Test the deployment
+
+Once the model deployment is complete, select the **Test** tab to test the model.
+
+The iris model expects four numbers as input to the model for each item.  In the scoring script, `data = json.loads(raw_data)["data"]` reads the data.  So you'll use JSON syntax to provide the data.
+
+Test two lines of data by copying and pasting into **Input data to test real-time endpoint**:
+
+```json
+{"data": [
+    [1,2,3,4], 
+    [10,9,8,7]
+]}
+```
+
+After you paste the data, select **Test** to view the test results for the two lines of data.  You'll see two test results, showing the predicted values.
