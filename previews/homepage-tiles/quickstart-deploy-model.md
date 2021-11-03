@@ -25,11 +25,15 @@ The deploy wizard helps you deploy a model you've trained, either in Azure Machi
 1. Select the experiment that contains the model (for example, sklearn-iris-example for the model created from [Quickstart: Try it out with a sample model (preview)](quickstart-train-model-sample.md)).
 1. Select the link on the display name for the run.
 1. Select the **Output + logs** tab.
-1. Select **Download all** in the tools above the tabs.
+1. Open the **model** folder.
+1. Select **Download** for the **model.pkl** file.
 
-    ![ Screenshot: Download output from training run. ](../media/quickstart-deploy-model/download-all.png)
+    ![ Screenshot: Download model from training run. ](../media/quickstart-deploy-model/download-model.png)
 
-1. Locate the downloaded folder or zipped file. If it downloads as a zipped file, extract all contents into a folder to use in the next step.
+> [!NOTE]
+> Your log files may look different from this screenshot.  But you'll still have a **model** folder.
+
+1. Make sure the name of the file is **model.pkl**.  If it contains a version number (because your download directory already has that filename), move it elsewhere and change its name to **model.pkl**.  That's the name you'll be using in the scoring script in the next section.
 
 ## Create a scoring script
 
@@ -133,7 +137,7 @@ Once the endpoint is created, you'll see the **Details** tab for the endpoint.  
 
 ![ Screenshot: Model provisioning](../media/quickstart-deploy-model/endpoint-details-deployment-provisioning.png) 
 
-The model is deployed and ready to use when:
+The complete deployment may take 5-10 minutes.  The model is deployed and ready to use when:
 
 * Provisioning state for the endpoint is **Succeeded**
 * Traffic allocation for the deployment is **blue(100%)**
@@ -143,7 +147,7 @@ The model is deployed and ready to use when:
 
 ## Test the deployment
 
-Once the model deployment is complete, select the **Test** tab to test the model.  
+Once the model deployment is ready, select the **Test** tab to test the model.  
 
 The iris model expects values of sepal_length, sepal_width, petal_length and petal_width. Based on this input, it will classify the species as either Iris-setosa, Iris-virginica, or Iris-versicolor.
 
@@ -159,12 +163,15 @@ Test by copying and pasting into **Input data to test real-time endpoint**:
 
 After you paste the data, select **Test** to view the test results.  You'll see the predicted values for each sample input.
 
+![ Screenshot: Test the model](../media/quickstart-deploy-model/test-results.png) 
+
 ## Consume
 
 Use the information in the **Consume** tab to call this model from you application.
 
 ## Clean up resources
 
-Since the deployed model must always be available, the VM it is on is always running. Once you're finished using the deployed model, delete the endpoint to keep from being charged for this VM.
+Since the deployed model must always be available, the VM is always running. Once you're finished using the deployed model, delete the endpoint to keep from being charged for this VM.
 
 ![ Screenshot: Delete the endpoint](../media/quickstart-deploy-model/delete-endpoint.png)
+
