@@ -99,9 +99,9 @@ Fill out the **Create deployment (preview)** wizard as shown in the following se
 1. Name the model **iris-classification**.
 1. For the **Model framework**, select **scikitlearn**.
 1. For the **Framework version** enter **0.24.1**.
-1. for the **Model file or folder**, select **Upload folder**.
-1. Select **Browse**, and select the *model* folder inside your downloaded output folder.
-1. Select **Upload** on the prompt to confirm the upload of four files.
+1. for the **Model file or folder**, leave it as **Upload file**.
+1. Select **Browse**, and select the *model.pkl* file you downloaded above.
+1. Select **Upload** on the prompt to confirm the upload.
 1. Select **Register**.
 1. Select the model **iris-classification** in the list of registered models.  (If the list doesn't appear, try refreshing your browser page.)
 1. Select **Next**.
