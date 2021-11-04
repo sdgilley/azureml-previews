@@ -145,6 +145,11 @@ The complete deployment may take 5-10 minutes.  The model is deployed and ready 
 
 ![ Screenshot: Model deployed](../media/quickstart-deploy-model/deploy-succeeded.png) 
 
+> [!IMPORTANT]
+> Make sure the traffic allocation is 100%.  When the green check mark first appears, it will be at 0%.  
+
+
+
 ## Test the deployment
 
 Once the model deployment is ready, select the **Test** tab to test the model.  
