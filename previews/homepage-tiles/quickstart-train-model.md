@@ -266,6 +266,4 @@ Once the job is complete, the *model* folder contains all model files that are s
 
 ## Next steps
 
-* See [Quickstart: Train your own model with the job creation wizard (preview)](quickstart-train-model.md) to train a model with your own training script and data.
 * See [Quickstart: Deploy the model (preview)](quickstart-deploy-model.md) to deploy the model you just trained.
-
