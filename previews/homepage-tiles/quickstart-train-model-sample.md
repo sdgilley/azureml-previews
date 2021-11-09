@@ -14,6 +14,10 @@ In this quickstart, you'll train a sample model and see how Azure Machine Learni
 
 1. Sign in to [Azure Machine Learning studio](https://ml.azure.com). Use the information provided to you to activate the private preview.
 1. Select **Go to workspace** for your workspace. If you don't have one, select **Create workspace** and follow the steps to create one.  Once created, select **Go to workspace**.
+
+    > [!NOTE]
+    > Use a workspace that isn't secured behind a virtual network.
+
 1. To train your first model, select **Try it out**.
 1. Select  **Classification - Scikit-learn - Iris dataset**.  This example will build a model to classify different species of iris flowers by using the Iris dataset.
 1. Select **Show job details** to see more about the job that will run.  Scroll down to view the data, along with a preview of the first five rows of data.  

@@ -10,11 +10,11 @@ In this quickstart, you'll use the job creation wizard to deploy a model.  You'l
 
 ## Prerequisites
 
-Complete either one of these quickstarts:
+Complete either one of these quickstarts to create a model in a workspace that isn't secured behind a virtual network.
 
 * [Quickstart: Try it out with a sample model (preview)](quickstart-train-model-sample.md)
 * [Quickstart: Train your own model with the job creation wizard (preview)](quickstart-train-model.md)
- 
+
 ## Download model
 
 The deploy wizard helps you deploy a model you've trained, either in Azure Machine Learning, or elsewhere.  In this quickstart, you'll use the model that you trained in one of the prerequisite quickstarts. 

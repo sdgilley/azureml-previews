@@ -145,6 +145,10 @@ To supply data to a training job, you use an Azure Machine Learning dataset.  In
 
 1. Sign in to [Azure Machine Learning studio](https://ml.azure.com). Use the information provided to you to activate the private preview.
 1. Select **Go to workspace** for your workspace. If you don't have one, select **Create workspace** and follow the steps to create one.  Once created, select **Go to workspace**.
+
+    > [!NOTE]
+    > Use a workspace that isn't secured behind a virtual network.
+
 1. On the left hand side, select **Datasets**.
 1. Select **Create dataset** and then select **From web files**.
 1. Copy and paste the **Web URL**:
