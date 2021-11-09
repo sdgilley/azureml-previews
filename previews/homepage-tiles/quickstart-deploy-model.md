@@ -89,7 +89,7 @@ Fill out the **Create deployment (preview)** wizard as shown in the following se
 
 ### Endpoint
 
-1. For **Endpoint name**, enter **iris-endpoint**.
+1. For **Endpoint name**, provide a name.
 1. Leave the rest of this page with default values.
 1. Select **Next**.
 
