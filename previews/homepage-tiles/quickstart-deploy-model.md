@@ -118,6 +118,7 @@ Fill out the **Create deployment (preview)** wizard as shown in the following se
 
 ### Compute 
 
+1. Select a **Virtual machine size**.
 1. Set the **Instance count** to 1.
 1. Select **Next**.
 
